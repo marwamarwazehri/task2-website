@@ -18,15 +18,80 @@
 
 .sec-one-two{
    background-image: url("./images/backgroundImg.png");
-   height:1000px;
-   width: 100%;
-   background-repeat: no-repeat;
-   background-size:100% 100%;
+   min-height:140vh;
+  background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
   
-  
+   
+  }
+
+  @media (max-width:943px) {
+
+    .sec-one-two{
+  min-height:100vh;
+}
+
+.section-two h4{
+  color: white;
+  font-size:25px;
+  max-width:500px;
+}
+
+.section-two h4 span{
+  position: relative;
+  z-index: 2;
+}
+
+.section-two span img{
+  position: absolute;
+  width:275px;
+  height:70px;
+  left: -7px;
+  top: -3px;
+  z-index: -1;
+}
+
+
+.section-two p{
+  color: #C6C0C0;
+  max-width:680px;
+  text-align: center;
+  font-size:15px;
+  line-height:25px;
+}
 
   }
 
+  @media (max-width:685px) {
+
+    .sec-one-two{
+  min-height:80vh;
+
+}
+
+  }
+  @media (max-width:540px) {
+
+    .sec-one-two{
+  min-height:70vh;
+
+}
+
+  }
+
+  @media (max-width:468px) {
+
+    .sec-one-two{
+    
+     background-size:100% 100%;
+
+}
+
+  }
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
   /*section one*/
 
   .section-one{
@@ -40,6 +105,7 @@
   .section-one h4{
     color: white;
     font-size:19px;
+    cursor: pointer;
   }
 
   .section-one h4 span{
@@ -68,6 +134,7 @@
   .section-one img{
     width: 30px;
     height: 30px;
+    cursor: pointer;
   }
 
   #iconBar{
@@ -141,6 +208,8 @@
 }
 
 
+
+
   }
 
   @media (max-width:400px) {
@@ -149,10 +218,7 @@
       
     }
   }
-
-
-
-  /*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
   
   /*section-two*/
 
@@ -163,6 +229,7 @@
     justify-content: center;
     gap:1rem;
   margin-top:3.5rem;
+  
   }
 
   .section-two h4{
@@ -205,18 +272,23 @@
     that the element is responsive, meaning it will adjust its size according to its parent
      container or the screen size, but it won't grow beyond the maximum width you’ve set.*/
     max-width:380px;
-    background-color:#DEDEDE;
-    border:2px solid  #FFFFFF ;
+    background-color: rgb(161, 156, 156,0.5);
+    border:2px solid  #a1a0a0;
     border-radius:50px;
     padding:5px 1em;
     padding-right:5px;
     margin-top:1.5rem;
+   
 
   }
 
   .input input{
     border: none;
     background-color: transparent;
+    outline: none;
+    color: white;
+    width:100%;
+  max-width:380px;
    
     
   }
@@ -224,11 +296,13 @@
   .input input::placeholder{
     color: #C6C0C0;
     font-size:14px;
+    
   }
 
   .section-two .input img{
     width:40px;
     height:40px;
+    cursor: pointer;
   }
 
   /* .pionts{
@@ -242,8 +316,107 @@
    
   } */
 
+ @media (max-width:943px) {
 
+  .section-two{
+    margin-top: 2rem;
+  }
+
+.section-two h4{
+  color: white;
+  font-size:35px;
+  max-width:500px;
+}
+
+
+
+.section-two span img{
+  position: absolute;
+  width:240px;
+  height:60px;
+  left: -7px;
+  top: -3px;
+  z-index: -1;
+}
+
+
+.section-two p{
+  color: #f3eded;
+  max-width:500px;
+  text-align:left;
+  font-size:15px;
+  line-height:25px;
+}
+
+
+.section-two .input{
   
+  width:100%;
+  max-width:290px;
+  background-color:rgba(129, 126, 126, 0.6);
+  border:2px solid  #bebbbb;
+  margin-top: 10px;
+  }
+
+.input input::placeholder{
+  color:white;
+  font-size:14px;
+  
+}
+
+.input input{
+  width:100%;
+  max-width:290px;
+}
+
+  }
+  
+  @media (max-width:685px) {
+    .section-two{
+      margin-top:0;
+    }
+
+    .section-two h4{
+      color: white;
+      font-size:30px;
+      max-width:450px;
+    }
+    .section-two .input{
+      padding:6px 1em;
+      width:100%;
+      max-width:200px;
+      
+      }
+    
+    .input input::placeholder{
+      color:white;
+      font-size:13px;
+      
+    }
+    
+    .input input{
+      width:100%;
+      max-width:200px;
+    }
+
+    .section-two .input img{
+      width:30px;
+      height:30px;
+      cursor: pointer;
+    }
+
+
+    .section-two span img{
+      position: absolute;
+      width:210px;
+      height:50px;
+      left: -7px;
+      top: -3px;
+      z-index: -1;
+    }
+    
+
+  }
   @media (max-width:540px) {
 
     .section-two{
@@ -251,39 +424,58 @@
     }
 
     .section-two h4{
-       font-size:35px;
-      
-      }
-    
-     
-      .section-two span img{
-        position: absolute;
-        width:240px;
-        height:60px;
-        left: -7px;
-        top: -3px;
-        z-index: -1;
-      }
-    
-    
-      .section-two p{
-        color: #C6C0C0;
-        max-width:600px;
-        text-align:left;
-        font-size:15px;
-        line-height:25px;
-      }
+      color: white;
+      font-size:25px;
+      max-width:400px;
+    }
 
-      .section-two .input{
-       max-width:340px;
-       
-      }
+
+    .section-two span img{
+      position: absolute;
+      width:180px;
+      height:45px;
+      left: -7px;
+      top: -3px;
+      z-index: -1;
+    }
+
+    .section-two p{
+      color: #f3eded;
+      max-width:390px;
+      text-align:left;
+      font-size:15px;
+      line-height:25px;
+    }
     
-      
-      
-     
+}
+
+@media (max-width:450px) {
+
+.section-two h4{
+    color: white;
+    font-size:20px;
+    max-width:300px;
   }
 
+
+  .section-two span img{
+    position: absolute;
+    width:145px;
+    height:35px;
+    left: -7px;
+    top: -3px;
+    z-index: -1;
+  }
+
+  .section-two p{
+    color: #f3eded;
+    max-width:330px;
+    text-align:left;
+    font-size:13px;
+    line-height:25px;
+  }
+
+}
   @media (max-width:445px) {
 
     .section-two{
@@ -291,23 +483,9 @@
       padding-right: 2em;
    }
 
-    .section-two h4{
-        font-size:30px;
-       
-       }
+  
 
-       .section-two span img{
-        position: absolute;
-        width:210px;
-        height:50px;
-        left: -7px;
-        top: -3px;
-        z-index: -1;
-      }
 
-      .section-two .input{
-        margin-top:1rem;
-      }
      
 
 
@@ -419,11 +597,18 @@
 /*section 4*/
 .section-four{
     display: flex;
+    flex-direction: column;
     padding-left:4em;
     padding-right: 0;
     gap: 1rem;
  
     
+  }
+
+  .left-right-sec4{
+    display: flex;
+    padding-right: 0;
+    gap: 1rem;
   }
 
 .leftPart{
@@ -473,6 +658,10 @@ background-color:#FBFBFB;
 
 }
 
+.small2{
+  display: none;
+}
+
 .small-box-img img{
    width:120px;
    height:125px;
@@ -496,9 +685,43 @@ background-color:#FBFBFB;
     margin-top:2rem;
 }
 
-.small-box-content img{
-    width:80px;
-    height:20px;
+.pionts-group{
+  display: flex;
+  gap:1rem;
+  position: relative;
+  top:-1rem;
+}
+
+.pionts-group span{
+  width:20px;
+  height:20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pionts-group span.blue{
+  background-color:#375C6C;
+}
+.pionts-group span.orange{
+  background-color:#F08C00;
+}
+
+.pionts-group span.green{
+  background-color:#2C8234;
+}
+.tickAdded{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:4px solid #565050;
+  transform: scale(1);
+}
+
+.tik{
+  color: white;
+  font-size:13px;
+  margin-bottom:5px;
+  
 }
 
 .rightPart{
@@ -510,7 +733,7 @@ background-color:#FBFBFB;
 .rightPart img{
     width: 100%;
    max-width:956px;
-   height: 586px;
+   min-height: 586px;
    
   
 }
@@ -529,134 +752,105 @@ background-color:#FBFBFB;
 
 }
 
-@media (max-width:1082px) {
+@media (max-width:1161px) {
 
    .rightPart img{
       
        max-width:956px;
-       height:650px;
+       min-height:450px;
     }
 
 
-    .small-box{
-            
-            max-width:300px;
-            height:fit-content;
-            padding: 1em 1em;
-        }
-        
-        .small-box-img img{
-           width:110px;
-           height:110px;
-        }
+  .small1{
+    display: none;
     
-     .small-box-content span {
-            color: #565050;
-            font-weight: 400;
-            font-size: 16px;
-            margin-top:10px;
-        }
-     
-    }
+  } 
 
-    @media (max-width:803px) {
-
-        .small-box-content h4{
-            font-weight: 500;
-            font-size:17px;
-        }
+  .small2{
+    display: flex;
+    margin:auto;
+    margin-top:2rem;
+  }
        
-        }
-
-    @media (max-width:913px) {
-        .rightPart img{
-         max-width:700px;
-          height:650px;
-         } 
     }
 
-    @media (max-width:829px) {
-        .section-four{
-            display: flex;
-            padding-left:2em;
-            gap:5rem;  }
+    @media (max-width:898px) {
+      .rightPart img{
+        max-width:900px;
+        min-height:400px;
+     }
+    }
 
+  @media (max-width:818px) {
+     
 
-            .rightPart img{
-                max-width:700px;
-                height:700px;
-                } 
+     .section-four{
+      display: flex;
+      padding-left:2em;
+      gap:2rem; 
+     }
+
     }
 
     @media (max-width:750px) {
+
+     .left-right-sec4{
+        display: flex;
+        flex-direction: column;
+         padding-right: 1em;
+        gap: 1rem;
+      }
+
+     .small1{
+      display: flex;
+      margin: 1rem  auto;
       
-        .section-four{
-            display: flex;
-            flex-direction: column;
-            /* padding-left:4em; */
-            gap: 1rem;
-         }
+     }
 
-         .rightPart img{
-        width: 100%;
-        max-width: 100%;
-         height:450px;
-        }
+     .small2{
+      display: none;
+     }
 
-        .small-box-content h4{
-            
-            font-size: 20px;
-        }
-        .small-box{
-            margin: auto;
-            margin-top: 2rem;
-            margin-bottom:1rem;
-        }
-        
+     .rightPart img{
+      margin:auto;
+      width:100%;
+      max-width:550px;
+      min-height:300px;
+   }
+    }
+
+
+    @media (max-width:465px) {
+     
+    .rightPart img{
+      margin:auto;
+      width:100%;
+      max-width:550px;
+      min-height:250px;
+   }
+    }
+
+    @media (max-width:362px) {
+      .small-box-content h4{
+        font-weight: 500;
+        font-size:16px;
+    }
 
     
-        }
+    .rightPart img{
+      margin:auto;
+      width:100%;
+      max-width:550px;
+      min-height:200px;
+   }
+    }
 
-@media (max-width:594px) {
-            .section-four .leftPart{
-                padding-right:1em;
-            }
+    
 
-            .rightPart img{
-              width: 100%;
-              max-width: 100%;
-               height:400px;
-              }
 
-        }
 
-@media (max-width:525px) {
-            .section-four {
-                padding-left:1em;
-            }
 
-            .rightPart img{
-              width: 100%;
-              max-width: 100%;
-               height:300px;
-              }
 
-        }
-
-@media (max-width:340px) {
-
-.small-box-content h4{
-    font-weight: 500;
-    font-size:17px;
-}
-
-.rightPart img{
-  width: 100%;
-  max-width: 100%;
-   height:250px;
-  }
-
-}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -763,15 +957,16 @@ background-color:#FBFBFB;
   width: 115px;
   height: 38px;
   border-radius:5px;
+  margin-bottom: 1.5rem;
  
 }
-.red{
+/* .red{
   background-color:#E34848;
 }
 
 .green{
   background-color:#59B162;
-}
+} */
 
 .table-tick{
   display: flex;
@@ -785,17 +980,37 @@ background-color:#FBFBFB;
 .table-tick .table{
   width: 100%;
   max-width:196px;
-  height: 196px;
+  height:180px;
   
 }
 
-.table-tick .tick{
+.categoryPionts{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.categoryPionts span{
+  width:20px;
+  height:20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.showtick{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:4px solid #565050;
+  transform: scale(1);
+}
+/* .table-tick .tick{
   width: 100%;
   max-width:96px;
   height:24px;
   margin-top:1.5rem;
   
-}
+} */
 
 .items-container .item-box:nth-child(2) .tick ,.items-container .item-box:nth-child(3) .tick {
   width: 100%;
@@ -926,6 +1141,9 @@ background-color:#FBFBFB;
     max-width:50%;
     height: 402px;
   }
+  .sofanolight{
+    display: none;
+  }
 
   .sec6-content{
     display: flex;
@@ -966,6 +1184,7 @@ background-color:#FBFBFB;
     border: none;
     border-radius: 5px;
     margin-top: 2rem;
+    cursor: pointer;
   }
 
 
@@ -975,12 +1194,38 @@ background-color:#FBFBFB;
     
   }
 
+  .section-six img{
+    width: 100%;
+    max-width:50%;
+    height:350px;
+  }
+
+}
+
+@media (max-width:944px) {
+  
+  .section-six img{
+    width: 100%;
+    max-width:50%;
+    height:300px;
+  }
+
 }
 
 @media (max-width:897px) {
   .sec6-content h4{
    font-size:29px;
     
+  }
+
+}
+
+@media (max-width:944px) {
+  
+  .section-six img{
+    width: 100%;
+    max-width:50%;
+    height:250px;
   }
 
 }
@@ -995,6 +1240,13 @@ background-color:#FBFBFB;
    padding: 0 1em;
    
   }
+  .sofanolight{
+    display: flex;
+  }
+
+  .sofalight{
+    display: none;
+  }
 
    .section-six img{
     
@@ -1003,21 +1255,37 @@ background-color:#FBFBFB;
   }
 }
 
-@media (max-width:516px) {
- 
-
-   .section-six img{
-      max-width:85%;
+@media (max-width:700px) {
+  .section-six img{
+    
+    max-width:75%;
     height:300px;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:644px) {
+ 
+
+   .section-six img{
+      max-width:80%;
+    height:250px;
+  }
+}
+
+@media (max-width:462px) {
  
 
   .section-six img{
-     max-width:95%;
-   height:250px;
+     max-width:80%;
+   height:200px;
+ }
+}
+@media (max-width:347px) {
+ 
+
+  .section-six img{
+     max-width:85%;
+   height:180px;
  }
 }
 
